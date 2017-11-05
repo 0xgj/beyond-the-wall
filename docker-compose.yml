@@ -3,10 +3,10 @@ services:
   ss:
     image: caogj/ss-client
     environment:
-      - SERVER=xxx.xxx.xxx.xxx
+      - SERVER=${ss_ip}
       - SERVER_PORT=443
       - LOCAL_PORT=1080
-      - PASSWORD=xxx
+      - PASSWORD=${ss_passwd}
       - TIMEOUT=60
       - METHOD=aes-256-cfb
     restart: always

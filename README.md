@@ -3,6 +3,15 @@ A docker-compose file contains spining up a **shadowsocks client** and use **pol
 convert shadowsocks into an HTTP proxy.
 
 ## How to use?
+just *make* it
+```sh
+export ss_ip=1.2.3.4
+export ss_passwd=123456
+make
+```
+
+Or you can *DIY* by following steps:
+
 ### Install docker-compose and clone this repo, go into it
 
 ```sh
