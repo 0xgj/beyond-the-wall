@@ -7,7 +7,7 @@ Install docker-compose and clone this repo, go into it
 
 ```sh
 pip install docker-compose
-git clone https://github.com/caogj/docker-shadowsocks-client.git && cd docker-shadowsocks-client
+git clone https://github.com/caogj/beyond-the-wall && cd beyond-the-wall
 ```
 
 Setting connection info in *docker-compose.yml*, then run
