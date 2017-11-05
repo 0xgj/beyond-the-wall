@@ -3,18 +3,19 @@ A docker-compose file contains spining up a **shadowsocks client** and use **pol
 convert shadowsocks into an HTTP proxy.
 
 ## How to use?
-* Build your own image
-If you would like to build your own docker image, simply clone this repo and run:
-
-```sh
-cd polipo; docker build -t caogj/polipo .
-cd ss-client; docker build -t caogj/ss-client .
-```
 * Install docker-compose and clone this repo, go into it
 
 ```sh
 pip install docker-compose
 git clone https://github.com/caogj/beyond-the-wall && cd beyond-the-wall
+```
+* Build your own image
+
+If you would like to build your own docker image, simply clone this repo and run:
+
+```sh
+cd polipo; docker build -t caogj/polipo .
+cd ss-client; docker build -t caogj/ss-client .
 ```
 
 * Setting connection info in *docker-compose.yml*, then run
