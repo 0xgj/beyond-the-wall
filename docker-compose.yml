@@ -1,0 +1,21 @@
+version: "3"
+services:
+  ss:
+    image: caogj/ss-client
+    environment:
+      - SERVER=xxx.xxx.xxx.xxx
+      - SERVER_PORT=443
+      - LOCAL_PORT=1080
+      - PASSWORD=xxx
+      - TIMEOUT=60
+      - METHOD=aes-256-cfb
+    restart: always
+  proxy:
+    image: caogj/polipo
+    command:
+      socksParentProxy=ss_server:1080
+    ports:
+      - "8123:8123"
+    restart: always
+    links:
+      - "ss:ss_server"
