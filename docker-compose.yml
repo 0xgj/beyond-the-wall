@@ -4,9 +4,9 @@ services:
     image: caogj/ss-client
     environment:
       - SERVER=${ss_ip}
-      - SERVER_PORT=443
-      - LOCAL_PORT=1080
+      - SERVER_PORT=${ss_port}
       - PASSWORD=${ss_passwd}
+      - LOCAL_PORT=1080
       - TIMEOUT=60
       - METHOD=aes-256-cfb
     restart: always
