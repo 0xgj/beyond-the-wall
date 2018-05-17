@@ -2,6 +2,11 @@
 A docker-compose file contains spining up a **shadowsocks client** and use **polipo** to 
 convert shadowsocks into an HTTP proxy.
 
+tips: setup shadowsocks server:
+```sh
+docker run -dt --name ss -p 6443:6443 mritd/shadowsocks -s "-s 0.0.0.0 -p 6443 -m aes-256-cfb -k test123 --fast-open"
+```
+
 ## How to use?
 
 ### Install docker-compose and clone this repo, go into it
